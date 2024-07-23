@@ -102,7 +102,7 @@ def taskExec():
             time.sleep(15)
         elif 'music' in query or 'song' in query:
             speak("Ok, Playing Music")
-            music_dir = r'C:\Users\Vedant\Documents\Music\Playlist'
+            music_dir = r'C:\Users\Parmeet\Dropbox\My PC (LAPTOP-AMOBL683)\Desktop\Virtual_Assistant\Music'
             songs = os.listdir(music_dir)
             os.startfile(os.path.join(music_dir, songs[0]))
             time.sleep(15)
@@ -120,7 +120,7 @@ def taskExec():
                 Time_Ac = datetime.datetime.now()
                 now = Time_Ac.strftime("%H:%M:%S")
                 if now == tim:
-                    playsound(r'C:\Users\Vedant\Documents\Music\alarm_clock.mp3')
+                    playsound(r'C:\Users\Parmeet\Dropbox\My PC (LAPTOP-AMOBL683)\Desktop\Virtual_Assistant\Alarm.mp3')
                 elif now > tim:
                     speak("Alarm Over")
                     break
@@ -139,7 +139,7 @@ def taskExec():
             while timer > 0:
                 time.sleep(1)
                 timer -= 1
-            playsound(r'C:\Users\Parmeet\Dropbox\My PC (LAPTOP-AMOBL683)\Desktop\resume_projects\Alarm.mp3')
+            playsound(r'C:\Users\Parmeet\Dropbox\My PC (LAPTOP-AMOBL683)\Desktop\Virtual_Assistant\Alarm.mp3')
             speak(f"Your timer has completed")
         elif 'joke' in query:
             get = pyjokes.get_joke()
